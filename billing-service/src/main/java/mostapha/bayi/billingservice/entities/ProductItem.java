@@ -2,8 +2,14 @@ package mostapha.bayi.billingservice.entities;
 
 import mostapha.bayi.billingservice.model.Product;
 import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class ProductItem {
     @Id @GeneratedValue
     private Long id;
